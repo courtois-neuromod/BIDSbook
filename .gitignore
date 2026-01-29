@@ -1,2 +1,7 @@
 _build
 
+# Environments
+.env
+.venv
+env/
+venv/
