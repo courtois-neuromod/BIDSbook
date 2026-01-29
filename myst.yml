@@ -12,7 +12,6 @@ project:
     - title: Raw BIDS data
       children:
       - file: sourcedata/raw/demographics.md
-      -
       - title: Data acquisitions
         file: sourcedata/raw/acquisitions.md
         children:
