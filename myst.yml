@@ -7,7 +7,22 @@ project:
   # keywords: []
   # authors: []
   # github:
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: index.md
+    - title: Raw BIDS data
+      children:
+      - file: sourcedata/raw/demographics.md
+      -
+      - title: Data acquisitions
+        file: sourcedata/raw/acquisitions.md
+        children:
+        - file: sourcedata/raw/acquisitions/mri.md
+        - file: sourcedata/raw/acquisitions/physio.md
+    - title: Derivatives
+      children  :
+      - file: derivatives/mriqc.md
+      - file: derivatives/fmriprep.md
+      - file: derivatives/qsiprep.md
 site:
   template: book-theme
   # options:
