@@ -31,3 +31,10 @@ for raw_dataset_path in raw_bids_paths:
   fig.show()
 
 ```
+
+```{code-cell} python
+:tags: remove-input
+
+participants_data
+
+```
