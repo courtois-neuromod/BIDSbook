@@ -1,5 +1,5 @@
 """
-Script that retrieve the metadata from `dataset_description.json` and 
+Script that retrieve the metadata from `dataset_description.json` and
 `CITATION.cff` if exist, to configure the myst.yml file
 """
 
@@ -60,7 +60,7 @@ def metadata2yml(bids_path):
                 cff_data = yaml.safe_load(cff_file)
             # Since CITATION.cff has precedence over dataset_description.json,
             # we update the yaml_data given the information in that file
-            yaml_data = get_citation(cff_data, yaml_data) 
+            yaml_data = get_citation(cff_data, yaml_data)
 
         except yaml.YAMLError as e:
             print(f"Error parsing YAML file: {e}")

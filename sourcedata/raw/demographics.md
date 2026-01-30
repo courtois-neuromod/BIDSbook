@@ -2,6 +2,8 @@
 kernelspec:
   name: python3
   display_name: 'Python 3'
+bidsbook:
+  required_path: 'sourcedata/*/participants.tsv'
 ---
 
 ```{code-cell} python
@@ -29,12 +31,5 @@ for raw_dataset_path in raw_bids_paths:
   participants_data = pd.read_csv(raw_dataset_path/'participants.tsv', delimiter='\t')
   fig = px.histogram(participants_data, x="age", color="sex", title="Age Distribution by Gender", range_x=[0,100], nbins=50)
   fig.show()
-
-```
-
-```{code-cell} python
-:tags: remove-input
-
-participants_data
 
 ```

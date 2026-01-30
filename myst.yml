@@ -11,12 +11,15 @@ project:
     - file: index.md
     - title: Raw BIDS data
       children:
-      - file: sourcedata/raw/demographics.md
+      - title: Demographics
+        file: sourcedata/raw/demographics.md
       - title: Data acquisitions
         file: sourcedata/raw/acquisitions.md
         children:
         - file: sourcedata/raw/acquisitions/mri.md
         - file: sourcedata/raw/acquisitions/physio.md
+      - title: Tasks
+        file: sourcedata/raw/tasks.md
     - title: Derivatives
       children  :
       - file: derivatives/mriqc.md
